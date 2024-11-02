@@ -90,17 +90,11 @@ public class Main {
         int one = 1;
         int two = 2;
         int three = 3;
-        boolean oneIsMoreThanTwo = one > two;
-        if (oneIsMoreThanTwo) {
-            System.out.println(one);}
-        else {
-            System.out.println(two);
-        }
-        boolean twoIsMoreThanThree = two > three;
-        if (twoIsMoreThanThree) {
-            System.out.println(two); }
-        else {
+        if (one < two && two < three) {
             System.out.println(three);}
+        else if (one > two && two > three) {
+            System.out.println(one);}
+        else {System.out.println(two);}
 
     }}
 
